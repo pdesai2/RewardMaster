@@ -19,6 +19,12 @@
 		615D7D381AB9FE14001BC67C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615D7D201AB9FE14001BC67C /* UIKit.framework */; };
 		615D7D401AB9FE14001BC67C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D3E1AB9FE14001BC67C /* InfoPlist.strings */; };
 		615D7D421AB9FE14001BC67C /* RewardMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D411AB9FE14001BC67C /* RewardMasterTests.m */; };
+		615D7D4E1AB9FE3B001BC67C /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D4C1AB9FE3B001BC67C /* LaunchViewController.m */; };
+		615D7D4F1AB9FE3B001BC67C /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D4D1AB9FE3B001BC67C /* LaunchViewController.xib */; };
+		615D7D531AB9FFD3001BC67C /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D511AB9FFD3001BC67C /* PlacesTableViewController.m */; };
+		615D7D541AB9FFD3001BC67C /* PlacesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D521AB9FFD3001BC67C /* PlacesTableViewController.xib */; };
+		615D7D561ABA1395001BC67C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615D7D551ABA1395001BC67C /* CoreLocation.framework */; };
+		615D7D5F1ABA41E6001BC67C /* CreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D5E1ABA41E6001BC67C /* CreditCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		615D7D3D1AB9FE14001BC67C /* RewardMasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RewardMasterTests-Info.plist"; sourceTree = "<group>"; };
 		615D7D3F1AB9FE14001BC67C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		615D7D411AB9FE14001BC67C /* RewardMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardMasterTests.m; sourceTree = "<group>"; };
+		615D7D4B1AB9FE3B001BC67C /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		615D7D4C1AB9FE3B001BC67C /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		615D7D4D1AB9FE3B001BC67C /* LaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		615D7D501AB9FFD3001BC67C /* PlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesTableViewController.h; sourceTree = "<group>"; };
+		615D7D511AB9FFD3001BC67C /* PlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesTableViewController.m; sourceTree = "<group>"; };
+		615D7D521AB9FFD3001BC67C /* PlacesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacesTableViewController.xib; sourceTree = "<group>"; };
+		615D7D551ABA1395001BC67C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		615D7D5A1ABA1E77001BC67C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		615D7D5D1ABA41E6001BC67C /* CreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCard.h; sourceTree = "<group>"; };
+		615D7D5E1ABA41E6001BC67C /* CreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615D7D561ABA1395001BC67C /* CoreLocation.framework in Frameworks */,
 				615D7D1F1AB9FE14001BC67C /* CoreGraphics.framework in Frameworks */,
 				615D7D211AB9FE14001BC67C /* UIKit.framework in Frameworks */,
 				615D7D1D1AB9FE14001BC67C /* Foundation.framework in Frameworks */,
@@ -77,6 +94,7 @@
 		615D7D101AB9FE14001BC67C = {
 			isa = PBXGroup;
 			children = (
+				615D7D5A1ABA1E77001BC67C /* Constants.h */,
 				615D7D221AB9FE14001BC67C /* RewardMaster */,
 				615D7D3B1AB9FE14001BC67C /* RewardMasterTests */,
 				615D7D1B1AB9FE14001BC67C /* Frameworks */,
@@ -96,6 +114,7 @@
 		615D7D1B1AB9FE14001BC67C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				615D7D551ABA1395001BC67C /* CoreLocation.framework */,
 				615D7D1C1AB9FE14001BC67C /* Foundation.framework */,
 				615D7D1E1AB9FE14001BC67C /* CoreGraphics.framework */,
 				615D7D201AB9FE14001BC67C /* UIKit.framework */,
@@ -111,6 +130,14 @@
 				615D7D2C1AB9FE14001BC67C /* AppDelegate.m */,
 				615D7D2E1AB9FE14001BC67C /* Images.xcassets */,
 				615D7D231AB9FE14001BC67C /* Supporting Files */,
+				615D7D4B1AB9FE3B001BC67C /* LaunchViewController.h */,
+				615D7D4C1AB9FE3B001BC67C /* LaunchViewController.m */,
+				615D7D4D1AB9FE3B001BC67C /* LaunchViewController.xib */,
+				615D7D501AB9FFD3001BC67C /* PlacesTableViewController.h */,
+				615D7D511AB9FFD3001BC67C /* PlacesTableViewController.m */,
+				615D7D521AB9FFD3001BC67C /* PlacesTableViewController.xib */,
+				615D7D5D1ABA41E6001BC67C /* CreditCard.h */,
+				615D7D5E1ABA41E6001BC67C /* CreditCard.m */,
 			);
 			path = RewardMaster;
 			sourceTree = "<group>";
@@ -219,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615D7D4F1AB9FE3B001BC67C /* LaunchViewController.xib in Resources */,
+				615D7D541AB9FFD3001BC67C /* PlacesTableViewController.xib in Resources */,
 				615D7D271AB9FE14001BC67C /* InfoPlist.strings in Resources */,
 				615D7D2F1AB9FE14001BC67C /* Images.xcassets in Resources */,
 			);
@@ -240,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				615D7D2D1AB9FE14001BC67C /* AppDelegate.m in Sources */,
+				615D7D5F1ABA41E6001BC67C /* CreditCard.m in Sources */,
+				615D7D531AB9FFD3001BC67C /* PlacesTableViewController.m in Sources */,
 				615D7D291AB9FE14001BC67C /* main.m in Sources */,
+				615D7D4E1AB9FE3B001BC67C /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
