@@ -61,6 +61,10 @@
     else
     {
         [[Cards shared] addCardsToStore:@"calender.csv"];
+        NSString *searchString = self.searchInputTextField.text;
+        PlacesTableViewController *viewController = [[PlacesTableViewController alloc] init];
+        viewController.searchString = searchString;
+        [self.navigationController pushViewController:viewController animated:true];
     }
 }
 

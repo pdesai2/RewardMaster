@@ -11,5 +11,10 @@
 @interface Cards : NSObject
 -(void)addCardsToStore:(NSString*)fileName;
 +(Cards *)shared;
+-(NSMutableArray*) getCardPriorities:(NSArray*) Checktags;
+-(NSMutableArray*) getCardPriority:(NSString*) Checktag;
+
+
+@property NSMutableDictionary *tags;
 @property NSMutableArray *cards;
 @end

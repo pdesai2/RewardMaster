@@ -10,6 +10,8 @@
 
 @implementation CreditCard
 
+@synthesize cashBackPercent;
+
 -(id)initWithName:(NSString*)name
 {
     self.name = name;

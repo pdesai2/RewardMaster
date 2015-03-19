@@ -27,6 +27,13 @@
 		615D7D5F1ABA41E6001BC67C /* CreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D5E1ABA41E6001BC67C /* CreditCard.m */; };
 		615D7D621ABA4738001BC67C /* Cards.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D611ABA4738001BC67C /* Cards.m */; };
 		615D7D681ABA6091001BC67C /* calendar.csv in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D671ABA6091001BC67C /* calendar.csv */; };
+		615D7D761ABAC132001BC67C /* CreditCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */; };
+		615D7D771ABAC132001BC67C /* CreditCardTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */; };
+		615D7D7D1ABAC31E001BC67C /* bankamericard.png in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D781ABAC31E001BC67C /* bankamericard.png */; };
+		615D7D7E1ABAC31E001BC67C /* citi.png in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D791ABAC31E001BC67C /* citi.png */; };
+		615D7D7F1ABAC31E001BC67C /* discover_it.png in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D7A1ABAC31E001BC67C /* discover_it.png */; };
+		615D7D801ABAC31E001BC67C /* freedom.png in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D7B1ABAC31E001BC67C /* freedom.png */; };
+		615D7D811ABAC31E001BC67C /* sapphire.png in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D7C1ABAC31E001BC67C /* sapphire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,14 @@
 		615D7D601ABA4738001BC67C /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cards.h; sourceTree = "<group>"; };
 		615D7D611ABA4738001BC67C /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cards.m; sourceTree = "<group>"; };
 		615D7D671ABA6091001BC67C /* calendar.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar.csv; path = RewardMaster/calendar.csv; sourceTree = SOURCE_ROOT; };
+		615D7D731ABAC132001BC67C /* CreditCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardTableViewController.h; sourceTree = "<group>"; };
+		615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardTableViewController.m; sourceTree = "<group>"; };
+		615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardTableViewController.xib; sourceTree = "<group>"; };
+		615D7D781ABAC31E001BC67C /* bankamericard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bankamericard.png; sourceTree = "<group>"; };
+		615D7D791ABAC31E001BC67C /* citi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citi.png; sourceTree = "<group>"; };
+		615D7D7A1ABAC31E001BC67C /* discover_it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover_it.png; sourceTree = "<group>"; };
+		615D7D7B1ABAC31E001BC67C /* freedom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freedom.png; sourceTree = "<group>"; };
+		615D7D7C1ABAC31E001BC67C /* sapphire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sapphire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +114,9 @@
 		615D7D101AB9FE14001BC67C = {
 			isa = PBXGroup;
 			children = (
+				615D7D731ABAC132001BC67C /* CreditCardTableViewController.h */,
+				615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */,
+				615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */,
 				615D7D601ABA4738001BC67C /* Cards.h */,
 				615D7D611ABA4738001BC67C /* Cards.m */,
 				615D7D5A1ABA1E77001BC67C /* Constants.h */,
@@ -133,6 +151,11 @@
 		615D7D221AB9FE14001BC67C /* RewardMaster */ = {
 			isa = PBXGroup;
 			children = (
+				615D7D781ABAC31E001BC67C /* bankamericard.png */,
+				615D7D791ABAC31E001BC67C /* citi.png */,
+				615D7D7A1ABAC31E001BC67C /* discover_it.png */,
+				615D7D7B1ABAC31E001BC67C /* freedom.png */,
+				615D7D7C1ABAC31E001BC67C /* sapphire.png */,
 				615D7D671ABA6091001BC67C /* calendar.csv */,
 				615D7D2B1AB9FE14001BC67C /* AppDelegate.h */,
 				615D7D2C1AB9FE14001BC67C /* AppDelegate.m */,
@@ -254,11 +277,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615D7D771ABAC132001BC67C /* CreditCardTableViewController.xib in Resources */,
 				615D7D4F1AB9FE3B001BC67C /* LaunchViewController.xib in Resources */,
+				615D7D801ABAC31E001BC67C /* freedom.png in Resources */,
 				615D7D541AB9FFD3001BC67C /* PlacesTableViewController.xib in Resources */,
 				615D7D271AB9FE14001BC67C /* InfoPlist.strings in Resources */,
+				615D7D7F1ABAC31E001BC67C /* discover_it.png in Resources */,
+				615D7D811ABAC31E001BC67C /* sapphire.png in Resources */,
+				615D7D7E1ABAC31E001BC67C /* citi.png in Resources */,
 				615D7D681ABA6091001BC67C /* calendar.csv in Resources */,
 				615D7D2F1AB9FE14001BC67C /* Images.xcassets in Resources */,
+				615D7D7D1ABAC31E001BC67C /* bankamericard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				615D7D2D1AB9FE14001BC67C /* AppDelegate.m in Sources */,
+				615D7D761ABAC132001BC67C /* CreditCardTableViewController.m in Sources */,
 				615D7D5F1ABA41E6001BC67C /* CreditCard.m in Sources */,
 				615D7D531AB9FFD3001BC67C /* PlacesTableViewController.m in Sources */,
 				615D7D621ABA4738001BC67C /* Cards.m in Sources */,

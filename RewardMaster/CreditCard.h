@@ -11,7 +11,7 @@
 @interface CreditCard : NSObject
 
     @property NSString *name;
-    @property NSString *cashBackPercent;
+    @property(nonatomic) NSString *cashBackPercent;
     @property NSString *effective;
     @property NSMutableDictionary *categories;
     @property NSString *otherInfo;

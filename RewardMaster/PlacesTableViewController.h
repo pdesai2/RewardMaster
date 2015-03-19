@@ -16,4 +16,6 @@
 }
 
 @property NSString *type;
+@property NSString *searchString;
+@property NSArray *placesArray;
 @end

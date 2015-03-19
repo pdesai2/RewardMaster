@@ -7,6 +7,7 @@
 //
 
 #import "PlacesTableViewController.h"
+#import "CreditCardTableViewController.h"
 #import "Constants.h"
 
 @interface PlacesTableViewController ()
@@ -84,7 +85,39 @@ NSString *apiUrl;
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"}\n" withString:@"},"];
     NSData *json = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     places = [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:&error];
+    if(self.searchString == nil)
+    {
+        [self getPlacesInArray];
+    }
+    else
+    {
+        [self filterPlacesWithString:self.searchString];
+    }
     [self.tableView reloadData];
+}
+
+-(void) filterPlacesWithString:(NSString*)string
+{
+    NSMutableArray *searchStringArray = [[NSMutableArray alloc] init];
+    NSArray *array = [places valueForKey:@"dataArray"];
+    NSArray *results = [array valueForKey:@"results"];
+    NSArray *temp = [results objectAtIndex:0];
+    for(int i = 0 ; i < temp.count ; ++i)
+    {
+        NSString *name = [[temp objectAtIndex:i] valueForKey:@"name"];
+        if([[name lowercaseString] isEqualToString:[string lowercaseString]])
+        {
+            [searchStringArray addObject:[temp objectAtIndex:i]];
+        }
+    }
+    self.placesArray = [searchStringArray mutableCopy];
+}
+
+-(void) getPlacesInArray
+{
+    NSArray *array = [places valueForKey:@"dataArray"];
+    NSArray *results = [array valueForKey:@"results"];
+    self.placesArray = [results objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,20 +135,15 @@ NSString *apiUrl;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSArray *array = [places valueForKey:@"dataArray"];
-    NSArray *results = [array valueForKey:@"results"];
-    NSArray *temp = [results objectAtIndex:0];
-    return temp.count;
+    return [self.placesArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    NSArray *array = [places valueForKey:@"dataArray"];
-    NSArray *results = [array valueForKey:@"results"];
-    NSArray *temp = [results objectAtIndex:0];
-    cell.textLabel.text = [[temp objectAtIndex:indexPath.row] valueForKey:@"name"];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.textLabel.text = [[self.placesArray objectAtIndex:indexPath.row] valueForKey:@"name"];
     // Configure the cell...
     
     return cell;
@@ -164,21 +192,12 @@ NSString *apiUrl;
 }
 */
 
-/*
-#pragma mark - Table view delegate
-
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    CreditCardTableViewController *viewController = [[CreditCardTableViewController alloc] init];
+    viewController.tag = self.type;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
-*/
 
 @end
