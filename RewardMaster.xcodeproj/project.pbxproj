@@ -25,6 +25,8 @@
 		615D7D541AB9FFD3001BC67C /* PlacesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D521AB9FFD3001BC67C /* PlacesTableViewController.xib */; };
 		615D7D561ABA1395001BC67C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615D7D551ABA1395001BC67C /* CoreLocation.framework */; };
 		615D7D5F1ABA41E6001BC67C /* CreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D5E1ABA41E6001BC67C /* CreditCard.m */; };
+		615D7D621ABA4738001BC67C /* Cards.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D7D611ABA4738001BC67C /* Cards.m */; };
+		615D7D681ABA6091001BC67C /* calendar.csv in Resources */ = {isa = PBXBuildFile; fileRef = 615D7D671ABA6091001BC67C /* calendar.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		615D7D5A1ABA1E77001BC67C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		615D7D5D1ABA41E6001BC67C /* CreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCard.h; sourceTree = "<group>"; };
 		615D7D5E1ABA41E6001BC67C /* CreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCard.m; sourceTree = "<group>"; };
+		615D7D601ABA4738001BC67C /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cards.h; sourceTree = "<group>"; };
+		615D7D611ABA4738001BC67C /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cards.m; sourceTree = "<group>"; };
+		615D7D671ABA6091001BC67C /* calendar.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar.csv; path = RewardMaster/calendar.csv; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,8 @@
 		615D7D101AB9FE14001BC67C = {
 			isa = PBXGroup;
 			children = (
+				615D7D601ABA4738001BC67C /* Cards.h */,
+				615D7D611ABA4738001BC67C /* Cards.m */,
 				615D7D5A1ABA1E77001BC67C /* Constants.h */,
 				615D7D221AB9FE14001BC67C /* RewardMaster */,
 				615D7D3B1AB9FE14001BC67C /* RewardMasterTests */,
@@ -126,6 +133,7 @@
 		615D7D221AB9FE14001BC67C /* RewardMaster */ = {
 			isa = PBXGroup;
 			children = (
+				615D7D671ABA6091001BC67C /* calendar.csv */,
 				615D7D2B1AB9FE14001BC67C /* AppDelegate.h */,
 				615D7D2C1AB9FE14001BC67C /* AppDelegate.m */,
 				615D7D2E1AB9FE14001BC67C /* Images.xcassets */,
@@ -249,6 +257,7 @@
 				615D7D4F1AB9FE3B001BC67C /* LaunchViewController.xib in Resources */,
 				615D7D541AB9FFD3001BC67C /* PlacesTableViewController.xib in Resources */,
 				615D7D271AB9FE14001BC67C /* InfoPlist.strings in Resources */,
+				615D7D681ABA6091001BC67C /* calendar.csv in Resources */,
 				615D7D2F1AB9FE14001BC67C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +280,7 @@
 				615D7D2D1AB9FE14001BC67C /* AppDelegate.m in Sources */,
 				615D7D5F1ABA41E6001BC67C /* CreditCard.m in Sources */,
 				615D7D531AB9FFD3001BC67C /* PlacesTableViewController.m in Sources */,
+				615D7D621ABA4738001BC67C /* Cards.m in Sources */,
 				615D7D291AB9FE14001BC67C /* main.m in Sources */,
 				615D7D4E1AB9FE3B001BC67C /* LaunchViewController.m in Sources */,
 			);
@@ -469,6 +479,7 @@
 				615D7D471AB9FE14001BC67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		615D7D481AB9FE14001BC67C /* Build configuration list for PBXNativeTarget "RewardMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +488,7 @@
 				615D7D4A1AB9FE14001BC67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

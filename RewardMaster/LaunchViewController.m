@@ -8,6 +8,7 @@
 
 #import "LaunchViewController.h"
 #import "PlacesTableViewController.h"
+#import "Cards.h"
 
 @interface LaunchViewController ()
 
@@ -59,7 +60,7 @@
     }
     else
     {
-        
+        [[Cards shared] addCardsToStore:@"calender.csv"];
     }
 }
 

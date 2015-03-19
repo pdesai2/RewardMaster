@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface CreditCard : NSObject
-{
-    NSString *name;
-    NSString *cashBackPercent;
-    NSString *effective;
-    NSArray *categories;
-    NSString *otherInfo;
-}
 
+    @property NSString *name;
+    @property NSString *cashBackPercent;
+    @property NSString *effective;
+    @property NSMutableDictionary *categories;
+    @property NSString *otherInfo;
+
+-(id)initWithName:(NSString*)name;
 -(NSString*) getName;
 -(NSString*) getCashBackPercent;
 -(NSString*) getEffective;
 -(NSString*) getOtherInfo;
--(NSArray*) getCategories;
+-(NSMutableDictionary*) getCategories;
+-(void) addCategory:(NSString*)category withPercent:(NSString*)percent;
 @end

@@ -1,5 +1,5 @@
 //
-//  Constants.h
+//  Cards.h
 //  RewardMaster
 //
 //  Created by Desai, Pratik on 3/18/15.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Constants : NSObject
-
-#define API_KEY @"AIzaSyC16JDBP7jZtnwMDvU_K277duyKJ1HVjFI"
-
+@interface Cards : NSObject
+-(void)addCardsToStore:(NSString*)fileName;
++(Cards *)shared;
+@property NSMutableArray *cards;
 @end
