@@ -8,6 +8,7 @@
 
 #import "PlacesTableViewController.h"
 #import "CreditCardTableViewController.h"
+#import "CreditCard.h"
 #import "Constants.h"
 
 @interface PlacesTableViewController ()
@@ -71,7 +72,9 @@ NSString *apiUrl;
     }
     else
     {
-        url = [NSURL URLWithString:[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%@,%@&radius=1000&key=%@",latitude, longitude, API_KEY]];
+        NSString* types = @"grocery_or_supermarket|movie_theater|gas_station|transit_station|train_station|bus_station|subway_station|taxi_stand";
+        NSString *tmp= [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%@,%@ &radius=1000&type=%@&key=%@",latitude, longitude, types, API_KEY];
+        url = [NSURL URLWithString:[tmp stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding ] ];
     }
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -195,8 +198,16 @@ NSString *apiUrl;
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSMutableDictionary *dict = [self.placesArray objectAtIndex:indexPath.row];
     CreditCardTableViewController *viewController = [[CreditCardTableViewController alloc] init];
-    viewController.tag = self.type;
+    if(self.type != nil)
+    {
+        viewController.tag = self.type;
+    }
+    else
+    {
+        viewController.tags = [dict objectForKey:@"types"];
+    }
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

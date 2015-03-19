@@ -8,6 +8,7 @@
 
 #import "LaunchViewController.h"
 #import "PlacesTableViewController.h"
+#import "CreditCardTableViewController.h"
 #import "Cards.h"
 
 @interface LaunchViewController ()
@@ -69,25 +70,25 @@
 }
 
 - (IBAction)RestaurantSearchButton:(id)sender {
-    PlacesTableViewController *viewController = [[PlacesTableViewController alloc] init];
-    viewController.type = @"restaurant";
+    CreditCardTableViewController *viewController = [[CreditCardTableViewController alloc] init];
+    viewController.tag = @"restaurant";
     [self.navigationController pushViewController:viewController animated:true];
 }
 
 - (IBAction)SuperMarketSearchButton:(id)sender {
-    PlacesTableViewController *viewController = [[PlacesTableViewController alloc] init];
-    viewController.type = @"grocery_or_supermarket";
+    CreditCardTableViewController *viewController = [[CreditCardTableViewController alloc] init];
+    viewController.tag = @"grocery_or_supermarket";
     [self.navigationController pushViewController:viewController animated:true];
 }
 
 - (IBAction)TheatreSearchButton:(id)sender {
-    PlacesTableViewController *viewController = [[PlacesTableViewController alloc] init];
-    viewController.type = @"movie_theater";
+    CreditCardTableViewController *viewController = [[CreditCardTableViewController alloc] init];
+    viewController.tag = @"movie_theater";
     [self.navigationController pushViewController:viewController animated:true];
 }
 - (IBAction)GasStationSearchButton:(id)sender {
-    PlacesTableViewController *viewController = [[PlacesTableViewController alloc] init];
-    viewController.type = @"gas_station";
+    CreditCardTableViewController *viewController = [[CreditCardTableViewController alloc] init];
+    viewController.tag = @"gas_station";
     [self.navigationController pushViewController:viewController animated:true];
 }
 @end

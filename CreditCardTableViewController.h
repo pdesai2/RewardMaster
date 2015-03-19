@@ -13,5 +13,5 @@
 @property NSMutableArray *array;
 @property NSDictionary *dict;
 @property NSString *tag;
-
+@property NSArray *tags;
 @end

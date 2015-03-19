@@ -20,7 +20,14 @@
 {
     [super viewDidLoad];
     [[Cards shared] addCardsToStore:nil];
-    self.array = [[Cards shared] getCardPriority:self.tag];
+    if(self.tag != nil)
+    {
+        self.array = [[Cards shared] getCardPriority:self.tag];
+    }
+    else
+    {
+        self.array = [[Cards shared] getCardPriorities:self.tags];
+    }
     self.dict = [[NSDictionary alloc] initWithObjectsAndKeys:@"citi.png",@"Citi Double Cash Card",@"bankamericard.png",@"BOA Cash Rewards",@"freedom.png",@"Freedom",@"discover_it.png",@"Discover", nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

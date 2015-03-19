@@ -70,15 +70,15 @@
 		615D7D511AB9FFD3001BC67C /* PlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesTableViewController.m; sourceTree = "<group>"; };
 		615D7D521AB9FFD3001BC67C /* PlacesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacesTableViewController.xib; sourceTree = "<group>"; };
 		615D7D551ABA1395001BC67C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		615D7D5A1ABA1E77001BC67C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		615D7D5A1ABA1E77001BC67C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 		615D7D5D1ABA41E6001BC67C /* CreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCard.h; sourceTree = "<group>"; };
 		615D7D5E1ABA41E6001BC67C /* CreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCard.m; sourceTree = "<group>"; };
-		615D7D601ABA4738001BC67C /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cards.h; sourceTree = "<group>"; };
-		615D7D611ABA4738001BC67C /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cards.m; sourceTree = "<group>"; };
+		615D7D601ABA4738001BC67C /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cards.h; path = ../Cards.h; sourceTree = "<group>"; };
+		615D7D611ABA4738001BC67C /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cards.m; path = ../Cards.m; sourceTree = "<group>"; };
 		615D7D671ABA6091001BC67C /* calendar.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calendar.csv; path = RewardMaster/calendar.csv; sourceTree = SOURCE_ROOT; };
-		615D7D731ABAC132001BC67C /* CreditCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardTableViewController.h; sourceTree = "<group>"; };
-		615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardTableViewController.m; sourceTree = "<group>"; };
-		615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardTableViewController.xib; sourceTree = "<group>"; };
+		615D7D731ABAC132001BC67C /* CreditCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreditCardTableViewController.h; path = ../CreditCardTableViewController.h; sourceTree = "<group>"; };
+		615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreditCardTableViewController.m; path = ../CreditCardTableViewController.m; sourceTree = "<group>"; };
+		615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditCardTableViewController.xib; path = ../CreditCardTableViewController.xib; sourceTree = "<group>"; };
 		615D7D781ABAC31E001BC67C /* bankamericard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bankamericard.png; sourceTree = "<group>"; };
 		615D7D791ABAC31E001BC67C /* citi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citi.png; sourceTree = "<group>"; };
 		615D7D7A1ABAC31E001BC67C /* discover_it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover_it.png; sourceTree = "<group>"; };
@@ -114,12 +114,6 @@
 		615D7D101AB9FE14001BC67C = {
 			isa = PBXGroup;
 			children = (
-				615D7D731ABAC132001BC67C /* CreditCardTableViewController.h */,
-				615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */,
-				615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */,
-				615D7D601ABA4738001BC67C /* Cards.h */,
-				615D7D611ABA4738001BC67C /* Cards.m */,
-				615D7D5A1ABA1E77001BC67C /* Constants.h */,
 				615D7D221AB9FE14001BC67C /* RewardMaster */,
 				615D7D3B1AB9FE14001BC67C /* RewardMasterTests */,
 				615D7D1B1AB9FE14001BC67C /* Frameworks */,
@@ -151,6 +145,12 @@
 		615D7D221AB9FE14001BC67C /* RewardMaster */ = {
 			isa = PBXGroup;
 			children = (
+				615D7D731ABAC132001BC67C /* CreditCardTableViewController.h */,
+				615D7D741ABAC132001BC67C /* CreditCardTableViewController.m */,
+				615D7D751ABAC132001BC67C /* CreditCardTableViewController.xib */,
+				615D7D601ABA4738001BC67C /* Cards.h */,
+				615D7D611ABA4738001BC67C /* Cards.m */,
+				615D7D5A1ABA1E77001BC67C /* Constants.h */,
 				615D7D781ABAC31E001BC67C /* bankamericard.png */,
 				615D7D791ABAC31E001BC67C /* citi.png */,
 				615D7D7A1ABAC31E001BC67C /* discover_it.png */,

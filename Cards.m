@@ -87,12 +87,13 @@ static Cards *shared;
     }
     for(int i = 0 ; i < self.cards.count ; ++i)
     {
-        if([[[self.cards objectAtIndex:i] getCategories] objectForKey:tag] != nil)
+        if([[[self.cards objectAtIndex:i] getCategories] objectForKey:tag] != nil
+           || [[[self.cards objectAtIndex:i] getCategories] objectForKey:@"all"] != nil)
         {
             [array addObject:[self.cards objectAtIndex:i]];
         }
     }
-    return array;
+    return [self sortArray:array withTag:tag];
 }
 
 -(NSMutableArray*) getCardPriority:(NSString*) Checktag
